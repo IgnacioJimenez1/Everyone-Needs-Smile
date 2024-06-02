@@ -126,3 +126,24 @@ body {
     margin-left: 30px; 
     margin-right: 0; 
   }
+
+  .login-button,
+.register-button {
+  background: linear-gradient(to right, #00bfff, #ffff99);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: -10px 2px;
+  cursor: pointer;
+  border-radius: 8px; 
+  vertical-align: middle;
+}
+
+.login-button:hover,
+.register-button:hover {
+  background-color: linear-gradient(to right, #007acc, #ffcc66);
+}
