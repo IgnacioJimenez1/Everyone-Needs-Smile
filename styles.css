@@ -4,12 +4,16 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url('images/Fondo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
   }
   
   header {
-    background-color: #4CAF50;
+    background-color: #ffffff;
     padding: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   nav {
@@ -25,7 +29,7 @@ body {
   }
   
   .nav-links a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
   }
   
@@ -38,8 +42,8 @@ body {
   }
   
   footer {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
     position: fixed;
