@@ -21,6 +21,11 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
+  .logo img {
+    height: 50px; 
+    width: auto;
+  }
   
   .nav-links {
     list-style: none;
@@ -33,16 +38,25 @@ body {
     text-decoration: none;
   }
   
+  .hero-image img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+  }
+
   .main {
     padding: 20px;
   }
   
   section {
+    
     margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
   }
   
   footer {
-    background-color: #ffffff;
+    background-color: rgba(252, 252, 252, 0.9);
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
