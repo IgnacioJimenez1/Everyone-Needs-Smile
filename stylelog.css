@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5); 
+    color: white;
+    text-align: center;
+    z-index: 1000; 
+}
+
+.backlog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+    background: url('images/image.png') no-repeat center center/cover;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.login-container {
+    transform: translate(-50%, -50%) translateX(0);
+}
+
+.register-container {
+    transform: translate(-50%, -50%) translateX(100%);
+    opacity: 0;
+}
+
+.recover-container {
+    transform: translate(-50%, -50%) translateX(-100%);
+    opacity: 0;
+}
+
+.container.show-register .login-container {
+    transform: translate(-50%, -50%) translateX(-100%);
+    opacity: 0;
+}
+
+.container.show-register .register-container {
+    transform: translate(-50%, -50%) translateX(0);
+    opacity: 1;
+}
+
+.container.show-recover .login-container {
+    transform: translate(-50%, -50%) translateX(100%);
+    opacity: 0;
+}
+
+.container.show-recover .recover-container {
+    transform: translate(-50%, -50%) translateX(0);
+    opacity: 1;
+}
+
+.login-form, .register-form, .recover-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h1, .register-form h1, .recover-form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form label, .register-form label, .recover-form label {
+    margin-bottom: 5px;
+}
+
+.login-form input, .register-form input, .recover-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button, .register-form button, .recover-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover, .register-form button:hover, .recover-form button:hover {
+    background-color: #0056b3;
+}
+
+.login-form p, .register-form p, .recover-form p {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.login-form a, .register-form a, .recover-form a {
+    color: #007BFF; 
+    text-decoration: none; 
+}
