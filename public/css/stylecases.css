@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('/images/Fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+header .logo img {
+    width: auto;
+    height: 50px; 
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.login-button,
+.register-button {
+    background: linear-gradient(to right, #00bfff, #ffff99);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -10px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+.login-button:hover,
+.register-button:hover {
+    background-color: linear-gradient(to right, #007acc, #ffcc66);
+}
+
+.cases-section {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cases-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.case-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.case-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.case-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.case-description {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.case-description h3 {
+    margin-top: 0;
+}
+
+.case-description p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: rgba(252, 252, 252, 0.9);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    position: relative; 
+    width: 100%;
+    margin-top: 20px; 
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #f2f2f2;
+}

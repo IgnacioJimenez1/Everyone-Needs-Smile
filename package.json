@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Everyone Need To Smile es una plataforma web que permite a los usuarios crear, descubrir y contribuir a una variedad de casos de donación. Desde causas benéficas locales hasta proyectos humanitarios internacionales, nuestra plataforma conecta a personas con corazones generosos con aquellos que necesitan apoyo.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/utils/addimg.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,11 @@
     "morgan": "^1.10.0"
   },
   "dependencies": {
-    "nodemon": "^3.1.4"
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7",
+    "pg": "^8.12.0"
   }
 }
