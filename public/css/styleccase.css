@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a3c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000a2f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .logo h1 {
+    color: #fff;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    background-color: #243b55;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.form-group h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.form-group form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group label {
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group a {
+    color: #00aaff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.details-section {
+    text-align: left;
+}
+
+.details-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.details-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-form textarea {
+    width: 60%;
+    height: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.images-upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.upload-box {
+    background-color: #3b5998;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.upload-box span {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.details-form input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.divmain{
+    width: 60%;
+    padding-left: 20%;
+}

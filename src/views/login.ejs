@@ -35,12 +35,12 @@
                     <input type="text" id="email" name="email" required>
                     <label for="password">Contraseña</label>
                     <input type="password" id="password" name="password" required>
-                    <a href="/forgot-password">¿Olvidaste tu contraseña?</a> <br>
-                    <a class="toggle-button" onclick="toggleForms()">¿Aún no tiene una cuenta? Crear cuenta</a>
+                    <a href="#" onclick="showForm('forgot-password-form')">¿Olvidaste tu contraseña?</a> <br>
+                    <a class="toggle-button" onclick="showForm('register-form')">¿Aún no tienes una cuenta? Crear cuenta</a>
                     <button type="submit">Iniciar sesión</button>
                 </form>
             </div>
-            <div id="register-form" class="register-section">
+            <div id="register-form" class="register-section" style="display: none;">
                 <form action="/register" method="POST">
                     <h2>Crear una cuenta</h2>
                     <div class="form-row">
@@ -71,34 +71,37 @@
                     <input type="password" id="password-register" name="password-register" required>
                     <label for="confirm-password">Repetir Contraseña</label>
                     <input type="password" id="confirm-password" name="confirm-password" required>
-                    <div class="terms-label">
+                    <div class="terms-container">
                         <input type="checkbox" id="terms" name="terms" required>
                         <label for="terms">He leído los Términos y Condiciones</label>
                     </div>
-                    <a class="toggle-button" onclick="toggleForms()">Ya tengo cuenta!</a>
+                    <a class="toggle-button" onclick="showForm('login-form')">Ya tengo cuenta!</a>
                     <button type="submit">Crear</button>
+                </form>
+            </div>
+            <div id="forgot-password-form" class="form-section" style="display: none;">
+                <form action="/recover" method="POST">
+                    <h2>Recuperar Contraseña</h2>
+                    <p>Para restablecer tu acceso, por favor ingresa tu correo electrónico y la última contraseña que recuerdes. Una vez verificados tus datos, te enviaremos un enlace para crear una nueva contraseña. Si tienes alguna dificultad, no dudes en contactarnos para obtener asistencia adicional. ¡Estamos aquí para ayudarte!</p>
+                    <label for="email-recover">Correo Electrónico</label>
+                    <input type="email" id="email-recover" name="email-recover" required>
+                    <button type="submit">Recuperar</button>
+                    <a class="toggle-button" onclick="showForm('register-form')">¿Aún no tienes una cuenta? Crear cuenta</a>
                 </form>
             </div>
         </div>
     </div>
 
     <script>
-        function toggleForms() {
-            const loginForm = document.getElementById('login-form');
-            const registerForm = document.getElementById('register-form');
-
-            if (loginForm.style.display === 'none') {
-                loginForm.style.display = 'flex';
-                registerForm.style.display = 'none';
-            } else {
-                loginForm.style.display = 'none';
-                registerForm.style.display = 'flex';
-            }
+        function showForm(formId) {
+            const forms = ['login-form', 'register-form', 'forgot-password-form'];
+            forms.forEach(id => {
+                document.getElementById(id).style.display = id === formId ? 'flex' : 'none';
+            });
         }
 
         document.addEventListener('DOMContentLoaded', function () {
-            document.getElementById('login-form').style.display = 'flex';
-            document.getElementById('register-form').style.display = 'none';
+            showForm('login-form');
         });
     </script>
 </body>

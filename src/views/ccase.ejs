@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Recaudo</title>
+    <link rel="stylesheet" href="/css/styleccase.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">¿Quiénes somos?</a></li>
+                <li><a href="/cases">Recaudos</a></li>
+                <li><a href="/">Lenguaje</a></li>
+                <li><a href="/">¿Cómo funciona?</a></li>
+                <li><a href="/login">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <h1>SMILE</h1>
+        </div>
+    </header>
+    <div class="divmain">
+    <main>
+        <h2>Crear recaudo</h2>
+        <section class="form-section">
+            <div class="form-group">
+                <h3>Comencemos...</h3>
+                <form>
+                    <label for="pais">¿A qué país serán destinados los fondos?</label>
+                    <input type="text" id="pais" name="pais">
+                    <label for="codigoPostal">Código Postal</label>
+                    <input type="text" id="codigoPostal" name="codigoPostal">
+                    <button type="submit">Aceptar</button>
+                    <a href="#">Términos y condiciones.</a>
+                </form>
+            </div>
+            <div class="form-group">
+                <h3>Recaudador</h3>
+                <p>Dentro de las próximas horas, un recaudador verificado, tomará su caso, y realizará un análisis para publicarlo. A continuación de ser necesario, deja notas sobre el caso.</p>
+                <form>
+                    <label for="notas">Notas...</label>
+                    <textarea id="notas" name="notas"></textarea>
+                    <button type="submit">Aceptar</button>
+                    <a href="#">Términos y condiciones.</a>
+                </form>
+            </div>
+        </section>
+        <section class="details-section">
+            <h3>Detalles del caso</h3>
+            <p>A continuación, te solicitamos que nos cuentes sobre la causa, tanto en toda la información que puedas brindar, o links de referencia, también imágenes.</p>
+            <div class="details-form">
+                <textarea placeholder="Detalles, ten en cuenta, que con los que aportes, luego el recaudador que tome su caso, lo publicará."></textarea>
+                <div class="images-upload">
+                    <div class="upload-box">
+                        <span>+</span>
+                        <p>Agregar Imagen</p>
+                    </div>
+                    <div class="upload-box">
+                        <span>+</span>
+                        <p>Agregar Imagen</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    </div>
+</body>
+</html>

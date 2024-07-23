@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Everyone-Needs-Smiles</title>
     <link rel="stylesheet" href="/css/stylecases.css">
-    <link rel="icon" href="images/LogoEVERYONE.png" type="image/x-icon"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="icon" href="images/LogoEVERYONE.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
 </head>
+
 <body>
     <header>
         <nav>
-          <div class="logo">
-            <a href="index.html"><img src="images/hor negro 1.png" alt="Everyone Needs To Smile Logo"></a>
-          </div>
-          <ul class="nav-links">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/cases">Casos</a></li>
-            <li><a href="/login" class="login-button">Iniciar Sesión</a></li>
-            <li><a href="/login" class="register-button">Registrarse</a></li>
-          </ul>
+            <ul>
+                <li><a href="/">¿Quiénes somos?</a></li>
+                <li><a href="/ccase">Crear Recaudo</a></li>
+                <li><a href="/login">Lenguaje</a></li>
+                <li><a href="/login">¿Cómo funciona?</a></li>
+            </ul>
         </nav>
-      </header>
+        <div class="logo">
+            <h1>SMILE</h1>
+        </div>
+    </header>
 
-    <main>
-        <section id="cases" class="cases-section">
+    <main class="mainclass">
+        <section class="hero">
+            <h1>Construyamos un futuro mejor.</h1>
+            <button class="buttonclass">Compartir un caso</button>
+            <button class="buttonclass">Aportar en un caso</button>
+        </section>
+        <section id="cases" class="cases">
             <h2>Casos Publicados</h2>
-            <div class="case-list">
-                <% data.forEach(function(caso) { %>
-                    <div class="case-item">
-                        <div class="case-image">
-                            <img src="data:image/jpeg;base64,<%= caso.image.toString('base64') %>" alt="Imagen del Caso">
+            <% data.forEach(function(caso) { %>
+            <div class="case">
+                    <div class="case-info">
+                        <h2>
+                            <%= caso.title %>
+                        </h2>
+                        <p>
+                            <%= caso.description %>
+                        </p>
+                        <div class="donation-info">
+                            <button>Aportar</button>
+                            <span>Prioridad</span>
+                            <p>
+                                <%= caso.description %>
+                            </p>
+                            <p><strong>Meta de Financiamiento:</strong>
+                                <%= caso.fundinggoal %>
+                            </p>
+                            <p><strong>Recaudado:</strong>
+                                <%= caso.amountraised %>
+                            </p>
+                            <p><strong>Fecha de Inicio:</strong>
+                                <%= caso.startdate %>
+                            </p>
+                            <p><strong>Fecha de Fin:</strong>
+                                <%= caso.enddate %>
+                            </p>
                         </div>
-                        <div class="case-description">
-                            <h3><%= caso.title %></h3>
-                            <p><%= caso.description %></p>
-                            <p><strong>Meta de Financiamiento:</strong> <%= caso.fundinggoal %></p>
-                            <p><strong>Recaudado:</strong> <%= caso.amountraised %></p>
-                            <p><strong>Fecha de Inicio:</strong> <%= caso.startdate %></p>
-                            <p><strong>Fecha de Fin:</strong> <%= caso.enddate %></p>
+                        </div>
+                        <div class="cimage">
+                            <img src="data:image/jpeg;base64,<%= caso.image.toString('base64') %>"
+                                alt="Imagen del Caso">
                         </div>
                     </div>
-                <% }); %>
-            </div>
+                </div>
+                    <% }); %>
         </section>
     </main>
 
@@ -52,11 +78,15 @@
             <div class="social-links">
                 <a href="https://x.com/EveryoneToSmile" class="social-icon"><i class="fab fa-youtube"></i></a>
                 <a href="https://x.com/EveryoneToSmile" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="https:/www.instagram.com/everyoneneedstosmile/" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https:/www.tiktok.com/@everyoneneedstosmile" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https:/www.instagram.com/everyoneneedstosmile/" class="social-icon"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https:/www.tiktok.com/@everyoneneedstosmile" class="social-icon"><i
+                        class="fab fa-tiktok"></i></a>
             </div>
             <p>&copy; 2024 Everyone Needs To Smile. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
+
 </html>
+<li class="buttonclass">

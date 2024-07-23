@@ -97,7 +97,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px; /* Aumentado */
+  max-width: 400px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -120,9 +120,10 @@ body {
 .form-section input {
   width: calc(100% - 16px);
   padding: 8px;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   border-radius: 60px;
-  margin-top: 0.5px; 
+  margin-top: 0.5px;
+  background-color: #87A7FB;
 }
 
 .form-section .form-row {
@@ -130,20 +131,22 @@ body {
   gap: 10px;
 }
 
-.form-section .form-row > div {
+.form-section .form-row>div {
   flex: 1;
 }
 
 .form-section button {
-  background-color: #00bfff;
+  background-color: #17345F;
   color: white;
   padding: 8px;
   border: none;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s;
   margin: 0 auto;
   display: block;
+  width: 60%;
+  margin-top: 5px;
 }
 
 .form-section button:hover {
@@ -154,9 +157,18 @@ body {
   text-align: center;
   color: #007acc;
   text-decoration: none;
+  display: block;
   margin-top: 10px;
-  display: block; 
+  margin-bottom: 10px;
 }
+
+.form-section p {
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
 
 .form-section a:hover {
   text-decoration: underline;
@@ -166,13 +178,24 @@ body {
   background-color: #18235c;
   color: #ffffff;
   padding: 20px;
+  margin-top: 70px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px; /* Aumentado */
+  max-width: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
 }
 
 .register-section h2 {
@@ -180,12 +203,14 @@ body {
   margin-bottom: 15px;
   color: #ffffff;
 }
+
 .register-section a {
   text-align: center;
   color: #007acc;
   text-decoration: none;
   margin-top: 10px;
   display: block;
+  margin-bottom: 10px;
 }
 
 .register-section a:hover {
@@ -199,26 +224,24 @@ body {
   display: block;
 }
 
-.register-section input[type="checkbox"] {
-  vertical-align: middle;
-}
 
 .register-section .terms-label {
   display: flex;
-  align-items: center;
   margin-top: 10px;
 }
 
-.register-section .terms-label input[type="checkbox"] {
-  margin-right: 1px;
-}
 
 .register-section .form-row {
   display: flex;
   gap: 10px;
 }
 
-.register-section .form-row > div {
+
+.register-section .terms-label label {
+  font-size: 5px;
+}
+
+.register-section .form-row>div {
   flex: 1;
 }
 
@@ -226,20 +249,22 @@ body {
   width: calc(100% - 16px);
   padding: 8px;
   border: 1px solid #000000;
-  border-radius: 4px;
+  border-radius: 60px;
   margin-bottom: .5px;
+  background-color: #87A7FB;
 }
 
 .register-section button {
-  background-color: #00bfff;
+  background-color: #17345F;
   color: white;
   padding: 8px;
   border: none;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s;
   margin: 0 auto;
   display: block;
+  width: 60%;
 }
 
 .register-section button:hover {
@@ -256,8 +281,4 @@ body {
 
 .register-section .toggle-button:hover {
   color: #007acc;
-}
-
-.register-section input[type="checkbox"] {
-  margin-right: 5px;
 }

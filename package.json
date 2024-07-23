@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/utils/addimg.js"
+    "dev": "nodemon src/utils/conectiontest.js"
   },
   "keywords": [],
   "author": "",

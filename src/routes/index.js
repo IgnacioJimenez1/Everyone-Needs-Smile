@@ -19,5 +19,7 @@ router.get('/cases', async (req, res) => {
     }
 });
 
+router.get('/ccase', (req, res) => res.render('ccase', { title: 'Everyone-Needs-Smiles' }));
+
 
 export default router;
