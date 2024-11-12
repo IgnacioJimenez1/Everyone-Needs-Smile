@@ -1,9 +1,9 @@
 import express from 'express';
+import bodyParser from 'body-parser'; 
 import { pool } from './database/connection.js';
 import {dirname, join} from 'path';
 import {fileURLToPath} from 'url';
 import indexRoutes from './routes/index.js'
-import e from 'express';
 
 const app = express();
 const port = 3000;
@@ -15,6 +15,9 @@ app.set('view engine', 'ejs');
 app.use('/', indexRoutes);
 
 app.use(express.static(join(__dirname, '../public')));
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.listen(port, () => {
     console.log(`Servidor iniciado en http://localhost:${port}`);

@@ -13,60 +13,11 @@ body {
     font-weight: 800;
     position: relative;
 }
-
-header {
-    background-color: #000a2f;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-header nav ul li {
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-header .logo h1 {
-    color: #fff;
-    margin: 0;
-}
-
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
 .hero {
     background-color: #00557f;
     color: #fff;
     text-align: center;
-    padding: 50px 20px;
+    padding: 5rem 2rem;
 }
 
 .hero h1 {
@@ -85,6 +36,20 @@ nav ul li a {
     font-size: 1em;
 }
 
+
+.hero button {
+    background-color: #fff;
+    color: #00557f;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+
+
 .cases {
     display: flex;
     flex-direction: column;
@@ -98,7 +63,7 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    border-radius: 65px;
+    border-radius: 5px;
     overflow: hidden;
     margin: 20px;
     width: auto;
@@ -110,8 +75,6 @@ nav ul li a {
     padding-right: 50px;
     width: 50%;
 }
-
-.cimage {}
 
 .cimage img {
     border-radius: 10px;
@@ -163,7 +126,7 @@ button {
 
 button:focus,
 button:hover {
-    color: #085fa7;
+    color: #00c3ff;
 }
 
 button:focus:after,
@@ -180,251 +143,15 @@ button:after {
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #ffffff;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
-}
-
-.buttonclass {
-    font-size: 18px;
-    color: #e1e1e1;
-    font-family: inherit;
-    font-weight: 800;
-    cursor: pointer;
-    position: relative;
-    border: none;
-    background: none;
-    text-transform: uppercase;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: color;
 }
 
 .buttonclass:focus,
 .buttonclass:hover {
-    color: #ffffff;
+    color: #00c3ff;
 }
 
 .buttonclass:focus:after,
 .buttonclass:hover:after {
     width: 100%;
     left: 0%;
-}
-
-.buttonclass:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #fff;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
-}body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #00557F;
-}
-
-.textclass{
-    font-size: 18px;
-    color: #000000;
-    font-family: inherit;
-    font-weight: 800;
-    position: relative;
-}
-
-header {
-    text-align: center;
-    border-radius: 50px;
-    background-color: #013955;
-    padding: 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
-.hero {
-    background-color: #00557f;
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.hero button {
-    background-color: #fff;
-    color: #00557f;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.cases {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #e9f4fb;
-}
-
-.case {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 65px;
-    overflow: hidden;
-    margin: 20px;
-    width: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.case-info {
-    padding: 20px;
-    padding-right: 50px;
-    width: 50%;
-}
-
-.cimage {}
-
-.cimage img {
-    border-radius: 10px;
-    padding-top: 4px;
-    padding: 5px;
-    width: auto;
-    height: 404px;
-}
-
-.donation-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-
-.donation-info button {
-    background-color: #00557f;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
-    margin-bottom: 10px;
-}
-
-.donation-info span {
-    background-color: #ff9b00;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-button {
-    font-size: 18px;
-    color: #e1e1e1;
-    font-family: inherit;
-    font-weight: 800;
-    cursor: pointer;
-    position: relative;
-    border: none;
-    background: none;
-    text-transform: uppercase;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: color;
-}
-
-button:focus,
-button:hover {
-    color: #085fa7;
-}
-
-button:focus:after,
-button:hover:after {
-    width: 100%;
-    left: 0%;
-}
-
-button:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #ffffff;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
-}
-
-.buttonclass {
-    font-size: 18px;
-    color: #e1e1e1;
-    font-family: inherit;
-    font-weight: 800;
-    cursor: pointer;
-    position: relative;
-    border: none;
-    background: none;
-    text-transform: uppercase;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: color;
-}
-
-.buttonclass:focus,
-.buttonclass:hover {
-    color: #ffffff;
-}
-
-.buttonclass:focus:after,
-.buttonclass:hover:after {
-    width: 100%;
-    left: 0%;
-}
-
-.buttonclass:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #fff;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
 }

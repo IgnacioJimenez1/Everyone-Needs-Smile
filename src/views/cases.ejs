@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everyone-Needs-Smiles</title>
+    <title><%= title %></title>
     <link rel="stylesheet" href="/css/stylecases.css">
     <link rel="icon" href="images/LogoEVERYONE.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -12,19 +12,7 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">¿Quiénes somos?</a></li>
-                <li><a href="/ccase">Crear Recaudo</a></li>
-                <li><a href="/login">Lenguaje</a></li>
-                <li><a href="/login">¿Cómo funciona?</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <h1>SMILE</h1>
-        </div>
-    </header>
+    <%- include('components/navbar') %>
 
     <main class="mainclass">
         <section class="hero">
@@ -74,18 +62,8 @@
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://x.com/EveryoneToSmile" class="social-icon"><i class="fab fa-youtube"></i></a>
-                <a href="https://x.com/EveryoneToSmile" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="https:/www.instagram.com/everyoneneedstosmile/" class="social-icon"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https:/www.tiktok.com/@everyoneneedstosmile" class="social-icon"><i
-                        class="fab fa-tiktok"></i></a>
-            </div>
-            <p>&copy; 2024 Everyone Needs To Smile. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+        <%- include('components/footer') %>
+      </footer>     
 </body>
 
 </html>

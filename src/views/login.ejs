@@ -4,24 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
+    <title><%= title %></title>
+    <link rel="icon" href="images/LogoEVERYONE.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/stylelog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="icon" href="/public/images/LogoEVERYONE.png" type="image/x-icon">
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="/">¿Quienes somos?</a></li>
-                <li><a href="/">Crear Recaudo</a></li>
-                <li class="logo"><a href="#"><img src="/images/logito.png" alt="Logo"></a></li>
-                <li><a href="/">Lenguaje</a></li>
-                <li><a href="/">¿Cómo funciona?</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('components/navbar') %>
     <div class="container">
         <div class="welcome-section">
             <h1>Bienvenido.</h1>
@@ -71,9 +60,11 @@
                     <input type="password" id="password-register" name="password-register" required>
                     <label for="confirm-password">Repetir Contraseña</label>
                     <input type="password" id="confirm-password" name="confirm-password" required>
-                    <div class="terms-container">
-                        <input type="checkbox" id="terms" name="terms" required>
-                        <label for="terms">He leído los Términos y Condiciones</label>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">
+                            <label for="terms">He leído los Términos y Condiciones</label>
+                        </label>
                     </div>
                     <a class="toggle-button" onclick="showForm('login-form')">Ya tengo cuenta!</a>
                     <button type="submit">Crear</button>

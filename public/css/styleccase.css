@@ -1,48 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a3c;
+    background-color: #17345F;
     color: #fff;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #000a2f;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-header nav ul li {
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-header .logo h1 {
-    color: #fff;
-    margin: 0;
 }
 
 main {
-    padding: 20px;
+    padding: 2rem 5rem;
+    padding-top: 5rem;
     text-align: center;
 }
 
 h2 {
     font-size: 2em;
     margin-bottom: 20px;
+}
+
+.divmain{
+    width: 60%;
+    
 }
 
 .form-section {
@@ -52,11 +29,14 @@ h2 {
 }
 
 .form-group {
-    background-color: #243b55;
+    background-color: #01030c;
     padding: 20px;
     border-radius: 10px;
     width: 40%;
+    background: url('/images/Fondo.png') no-repeat center center;
+    background-size: cover;
 }
+  
 
 .form-group h3 {
     font-size: 1.5em;
@@ -76,12 +56,34 @@ h2 {
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
 }
+
+.checkbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.checkbox input{
+    margin: 5px;
+    width: 10%;
+}
+.checkbox label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    width: 68%;
+}
+.checkbox a{
+    margin-top: 0px !important;
+}
+
 
 .form-group button {
     background-color: #00aaff;
@@ -90,6 +92,7 @@ h2 {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    align-items: center;
 }
 
 .form-group a {
@@ -129,6 +132,7 @@ h2 {
 
 .upload-box {
     background-color: #3b5998;
+    background: url('/images/Fondo.png') no-repeat center center;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -150,8 +154,72 @@ h2 {
     border: none;
     border-radius: 5px;
 }
+.hero button {
+    background-color: #fff;
+    color: #00557f;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
 
-.divmain{
-    width: 60%;
-    padding-left: 20%;
+
+.hero button {
+    background-color: #fff;
+    color: #00557f;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+button {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    background-color: #090342;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+button:focus,
+button:hover {
+    color: #00c3ff;
+}
+
+button:focus:after,
+button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+}
+
+.buttonclass:focus,
+.buttonclass:hover {
+    color: #00c3ff;
+}
+
+.buttonclass:focus:after,
+.buttonclass:hover:after {
+    width: 100%;
+    left: 0%;
 }

@@ -2,7 +2,7 @@ import { pool } from '../database/connection.js';
 
 const getUser = async () => {
     try {
-        const result = await pool.query('SELECT id, name, email, password, creationdate, usertype FROM usuarios;');
+        const result = await pool.query('SELECT * FROM public.usuarios;')
         console.log(result.rows);
     } catch (error) {
         console.error('Error executing query:', error);
